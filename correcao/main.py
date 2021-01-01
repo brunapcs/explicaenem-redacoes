@@ -30,7 +30,7 @@ def envia_email(correcoes, redacoes_wks, correcoes_wks):
         now = datetime.now()
         data_envio = now.strftime('%d/%m/%y %H:%M:%S') 
         email_aluno = correcao.get('Email do aluno')
-        nome_corretor = correcao.get('Corretor')
+        nome_corretor = correcao.get('Nome')
         url_correcao = correcao.get('Anexe o arquivo com a correção')
         tema = correcao.get('Tema da Redação') 
         id_redacao = correcao.get("id da redação")
@@ -118,4 +118,4 @@ def check_correcoes(data):
 
 
 if __name__ == '__main__': 
-    main('oi')
+    main('test')
